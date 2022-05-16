@@ -7,21 +7,22 @@ import {
   SET_SELECTED_OPTION
 } from '../types/'
 export const getQna = async (categoryId, quizDispatch) => {
-  try {
-    if (categoryId) {
-      const { questions } = qnaData.find(
-        question => question.categoryId === categoryId
-      )
-
-      quizDispatch({ type: GET_QNA, payload: questions })
-    }
-  } catch (error) {
-    console.warn(error)
-  }
+  // try {
+  //   if (categoryId) {
+  //     const { questions } = qnaData.find(
+  //       question => question.categoryId === categoryId
+  //     )
+  //     quizDispatch({ type: GET_QNA, payload: questions })
+  //   }
+  // } catch (error) {
+  //   console.warn(error)
+  // }
 }
 export const setCategory = async (quizDispatch, categoryId) => {
+  const { quizQna } = qnaData.find(qna => qna.categoryId === categoryId)
+
   try {
-    quizDispatch({ type: SET_CATEGORY, payload: categoryId })
+    quizDispatch({ type: SET_CATEGORY, payload: quizQna })
   } catch (error) {
     console.warn(error)
   }
@@ -33,7 +34,7 @@ export const updateScore = async (quizDispatch, score) => {
     console.warn(error)
   }
 }
-export const updateQuestionIndex = async (quizDispatch , score) => {
+export const updateQuestionIndex = async (quizDispatch, score) => {
   try {
     quizDispatch({ type: UPDATE_QUESTION, payload: ++score })
   } catch (error) {
@@ -42,7 +43,6 @@ export const updateQuestionIndex = async (quizDispatch , score) => {
 }
 export const addSelectedOption = async (selectedOption, quizDispatch) => {
   try {
-    console.log(selectedOption)
     quizDispatch({ type: SET_SELECTED_OPTION, payload: selectedOption })
   } catch (error) {
     console.warn(error)

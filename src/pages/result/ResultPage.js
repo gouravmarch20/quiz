@@ -1,7 +1,7 @@
 import React from 'react'
 import './ResultPage.css'
 import { useNavigate } from 'react-router-dom'
-
+import './ResultPage.css'
 import { useQuiz } from '../../context/quizContext'
 import { ResultCard } from '../../components'
 export const ResultPage = () => {
@@ -10,7 +10,6 @@ export const ResultPage = () => {
     quizDispatch
   } = useQuiz()
   const navigate = useNavigate()
-  console.log(quizQna)
   const isCorrectOption = quizQna.map(qna =>
     qna.options.reduce((acc, curr, id) => {
       if (curr.correct) {
@@ -26,7 +25,9 @@ export const ResultPage = () => {
   )
   return (
     <>
-      <div className=''>
+      <div className='align-center'>
+        <h2 className='subheading'>Your score is {scoreCount}</h2>
+
         {quizQna.map((question, index) => {
           return (
             <div key={index}>
@@ -38,6 +39,8 @@ export const ResultPage = () => {
             </div>
           )
         })}
+
+        <button className='btn'>Go to home</button>
       </div>
     </>
   )

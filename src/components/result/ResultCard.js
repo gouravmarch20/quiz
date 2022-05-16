@@ -1,10 +1,10 @@
 import React from 'react'
 
 export const ResultCard = ({ question, selectedOption, questionIndex }) => {
-  console.log(question)
   return (
     <div>
-      <p className='question'>{question.question}</p>
+    
+      <p className='question margin-1'>{question.question}</p>
 
       {question?.options.map((option, index) => {
         return (

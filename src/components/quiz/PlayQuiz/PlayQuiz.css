@@ -1,9 +1,10 @@
 .question-options {
-  height: 60vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 .question {
   width: 80%;
@@ -16,10 +17,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 1rem;
+  width: 100%;
 }
 .option {
   text-align: center;
-  width: 40%;
+  width: 30vw;
   margin: 1rem;
   padding: 1rem;
 
@@ -29,8 +31,13 @@
   cursor: pointer;
 }
 .option:hover {
-  background-color: greenyellow;
-  color: red;
+  background-color: blueviolet;
   transition: all 1s;
-  font-weight: 900;
+  font-weight: 500;
+}
+.option-selected {
+  background-color: blueviolet;
+
+  transition: all 1s;
+  font-weight: 500;
 }

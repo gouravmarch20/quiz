@@ -11,13 +11,12 @@ export const quizReducer = (state, { type, payload }) => {
     case GET_QNA:
       return { ...state, quizQna: payload }
     case SET_CATEGORY:
-      return { ...state, categoryId: payload }
+      return { ...state, quizQna: payload }
     case UPDATE_SCORE:
       return { ...state, score: payload }
     case UPDATE_QUESTION:
       return { ...state, currentQuestionIndex: payload }
     case SET_SELECTED_OPTION:
-    
       return {
         ...state,
         selectedOption: [...state.selectedOption, payload]

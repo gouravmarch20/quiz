@@ -1,115 +1,109 @@
 export const qnaData = [
   {
     categoryId: '101',
-    title: 'pokemon',
-    questions: [
+    quizQna: [
       {
-        id: 1,
-        question: 'What is the capital of India?',
         options: [
           {
-            text: 'Mumbai',
-            correct: false
+            correct: false,
+            value: 'Prytronics'
           },
           {
-            text: 'Navi mumbai',
-            correct: false
-          },
-          {
-            text: 'New Delhi',
+            value: 'Golang',
             correct: true
           },
           {
-            text: 'Red Gear',
+            value: 'Gotan',
             correct: false
+          },
+          {
+            correct: false,
+            value: 'Indus OS'
           }
-        ]
+        ],
+        question: 'Which one is a programming language ?'
       },
       {
-        id: 2,
-        question: 'What is computer coding?',
-        answers: [
+        options: [
           {
-            text: 'A collection of class and object',
+            value: 'Return number ',
             correct: false
           },
           {
-            text: 'A TV show ',
+            value: 'Return a string',
             correct: false
           },
           {
-            text: 'A list of functions',
-            correct: false
-          },
-          {
-            text: 'set of instructions to perform given action',
-            correct: true
-          }
-        ]
-      },
-      {
-        id: 3,
-        question: 'What are people who write computer code called?',
-        answers: [
-          {
-            text: 'Professors',
-            correct: false
-          },
-          {
-            text: 'Programmers',
+            value: 'Return localized string ',
             correct: true
           },
           {
-            text: 'Engineer',
-            correct: false
-          },
-          {
-            text: 'Frontend developers',
+            value: 'Return string',
             correct: false
           }
-        ]
+        ],
+        question: 'What does the toLocalString() methord do  '
       },
       {
-        id: 4,
-        question: 'Which of these is a programming language?',
-        answers: [
+        options: [
           {
-            text: 'lofi',
-            correct: false
-          },
-          {
-            text: 'Gotan',
-            correct: false
-          },
-          {
-            text: 'Devotion',
-            correct: false
-          },
-          {
-            text: 'Golang',
+            value: 'let',
             correct: true
+          },
+          {
+            value: 'this',
+            correct: false
+          },
+          {
+            correct: false,
+            value: 'typeof'
+          },
+          {
+            value: 'undefined',
+            correct: false
           }
-        ]
+        ],
+        question: 'Which keywords is used to define varible ?'
       },
       {
-        id: 5,
+        options: [
+          {
+            correct: false,
+            value: 'pop()'
+          },
+          {
+            correct: false,
+            value: 'getSubstring()'
+          },
+          {
+            correct: true,
+            value: 'slice()'
+          },
+          {
+            value: 'substr()',
+            correct: false
+          }
+        ],
         question:
-          'Which of these does can run without using a computer program  ?',
-        answers: [
+          'Which methord return the string starting at specefic position'
+      },
+      {
+        question: 'Which tag is used to write javascript code ?',
+        options: [
           {
-            text: 'Mobile device',
-            correct: false
+            correct: false,
+            value: '<sp>'
           },
           {
-            text: 'Bicycle',
+            value: '<script>',
             correct: true
           },
           {
-            text: 'Bike',
-            correct: false
+            correct: false,
+            value: '<p>'
           },
           {
-            text: 'Rocket',
+            value: '<div>',
             correct: false
           }
         ]
@@ -118,115 +112,109 @@ export const qnaData = [
   },
   {
     categoryId: '102',
-
-    questions: [
+    quizQna: [
       {
-        id: 1,
-        question: 'What is the capital of India?',
-        answers: [
+        options: [
           {
-            text: 'Mumbai',
+            correct: false,
+            value: 'Seven'
+          },
+          {
+            value: 'Five',
             correct: false
           },
           {
-            text: 'Navi mumbai',
-            correct: false
-          },
-          {
-            text: 'New Delhi',
+            value: 'Six',
             correct: true
           },
           {
-            text: 'Red Gear',
-            correct: false
+            correct: false,
+            value: 'Eight'
           }
-        ]
+        ],
+        question: 'How many Infinity Stones are there?'
       },
       {
-        id: 2,
-        question: 'What is computer coding?',
-        answers: [
+        options: [
           {
-            text: 'A collection of class and object',
-            correct: false
+            correct: false,
+            value: '2010'
           },
           {
-            text: 'A TV show ',
-            correct: false
-          },
-          {
-            text: 'A list of functions',
-            correct: false
-          },
-          {
-            text: 'set of instructions to perform given action',
-            correct: true
-          }
-        ]
-      },
-      {
-        id: 3,
-        question: 'What are people who write computer code called?',
-        answers: [
-          {
-            text: 'Professors',
-            correct: false
-          },
-          {
-            text: 'Programmers',
+            value: '1995',
             correct: true
           },
           {
-            text: 'Engineer',
+            value: '2011',
             correct: false
           },
           {
-            text: 'Frontend developers',
+            value: '2008',
             correct: false
           }
-        ]
-      },
-      {
-        id: 4,
-        question: 'Which of these is a programming language?',
-        answers: [
-          {
-            text: 'lofi',
-            correct: false
-          },
-          {
-            text: 'Gotan',
-            correct: false
-          },
-          {
-            text: 'Devotion',
-            correct: false
-          },
-          {
-            text: 'Golang',
-            correct: true
-          }
-        ]
-      },
-      {
-        id: 5,
+        ],
         question:
-          'Which of these does can run without using a computer program  ?',
-        answers: [
+          ' What year was the first Iron Man movie released, kicking off the Marvel Cinematic Universe?'
+      },
+      {
+        options: [
           {
-            text: 'Mobile device',
-            correct: false
-          },
-          {
-            text: 'Bicycle',
+            value: 'Tony Stark',
             correct: true
           },
           {
-            text: 'Bike',
+            value: 'Iron man',
             correct: false
           },
           {
-            text: 'Rocket',
+            correct: true,
+            value: 'Captain America'
+          },
+          {
+            value: 'Hulk',
+            correct: false
+          }
+        ],
+        question: ' Who was able to pick up Thor’s hammer in Endgame?'
+      },
+      {
+        options: [
+          {
+            correct: true,
+            value: 'Captain Marvel'
+          },
+          {
+            correct: false,
+            value: 'Monica Stark'
+          },
+          {
+            correct: false,
+            value: 'Zingyan'
+          },
+          {
+            value: 'Richard hendricks',
+            correct: false
+          }
+        ],
+        question: 'Who rescued Tony Stark and Nebula from space?'
+      },
+      {
+        question: 'On what planet was the Soul Stone in Infinity War?',
+        options: [
+          {
+            correct: true,
+            value: 'Vormir'
+          },
+          {
+            value: 'Mars',
+            correct: false
+          },
+          {
+            correct: false,
+            value: 'Zeron'
+          },
+          {
+            value: 'Vegeta Planet',
             correct: false
           }
         ]
@@ -235,119 +223,114 @@ export const qnaData = [
   },
   {
     categoryId: '103',
-
-    questions: [
+    quizQna: [
       {
-        id: 1,
-        question: 'What is the capital of India?',
-        answers: [
+        options: [
           {
-            text: 'Mumbai',
+            correct: false,
+            value: 'Railtel'
+          },
+          {
+            value: 'Larsen tourbo infotech',
             correct: false
           },
           {
-            text: 'Navi mumbai',
+            value: 'Affle',
             correct: false
           },
           {
-            text: 'New Delhi',
+            correct: true,
+            value: 'Mindtree'
+          }
+        ],
+        question: 'Which IT company is acquired by Larsen & Toubro Group.'
+      },
+      {
+        options: [
+          {
+            value: 'CDSL',
+            correct: false
+          },
+          {
+            value: 'Dixon',
             correct: true
           },
           {
-            text: 'Red Gear',
+            value: 'Relaxo',
+            correct: false
+          },
+          {
+            value: 'Info Edge ',
             correct: false
           }
-        ]
-      },
-      {
-        id: 2,
-        question: 'What is computer coding?',
-        answers: [
-          {
-            text: 'A collection of class and object',
-            correct: false
-          },
-          {
-            text: 'A TV show ',
-            correct: false
-          },
-          {
-            text: 'A list of functions',
-            correct: false
-          },
-          {
-            text: 'set of instructions to perform given action',
-            correct: true
-          }
-        ]
-      },
-      {
-        id: 3,
-        question: 'What are people who write computer code called?',
-        answers: [
-          {
-            text: 'Professors',
-            correct: false
-          },
-          {
-            text: 'Programmers',
-            correct: true
-          },
-          {
-            text: 'Engineer',
-            correct: false
-          },
-          {
-            text: 'Frontend developers',
-            correct: false
-          }
-        ]
-      },
-      {
-        id: 4,
-        question: 'Which of these is a programming language?',
-        answers: [
-          {
-            text: 'lofi',
-            correct: false
-          },
-          {
-            text: 'Gotan',
-            correct: false
-          },
-          {
-            text: 'Devotion',
-            correct: false
-          },
-          {
-            text: 'Golang',
-            correct: true
-          }
-        ]
-      },
-      {
-        id: 5,
+        ],
         question:
-          'Which of these does can run without using a computer program  ?',
-        answers: [
+          ' Which on is India multinational electronics manufacturing services company,?'
+      },
+      {
+        options: [
           {
-            text: 'Mobile device',
-            correct: false
-          },
-          {
-            text: 'Bicycle',
+            value: 'Parle',
             correct: true
           },
           {
-            text: 'Bike',
+            value: 'Amber',
             correct: false
           },
           {
-            text: 'Rocket',
+            correct: false,
+            value: 'Dabur'
+          },
+          {
+            value: 'Astral',
+            correct: true
+          }
+        ],
+        question: 'Which one is the PVC pipes manufacturing company ?  '
+      },
+      {
+        options: [
+          {
+            correct: false,
+            value: 'Stock Buyer'
+          },
+          {
+            correct: true,
+            value: 'SEBI'
+          },
+          {
+            correct: false,
+            value: 'Government of india'
+          },
+          {
+            value: 'Reserve Bank',
+            correct: false
+          }
+        ],
+        question: 'The Indian Stock Market is regulated by:'
+      },
+      {
+        question: 'The oldest stock market in india is ',
+        options: [
+          {
+            correct: false,
+            value: 'Delhi Stock Exchange'
+          },
+          {
+            value: 'National Stock Exchange',
+            correct: false
+          },
+          {
+            correct: true,
+            value: 'Bombay Stock Exchannge'
+          },
+          {
+            value: 'Kolkata Stock Exchange',
             correct: false
           }
         ]
       }
     ]
-  }
+  },
+  1
 ]

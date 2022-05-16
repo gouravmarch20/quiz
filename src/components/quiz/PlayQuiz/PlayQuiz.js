@@ -10,7 +10,7 @@ import { Navigate, useNavigate, useLocation } from 'react-router-dom'
 
 export const PlayQuiz = () => {
   const {
-    quizState: { currentQuestionIndex, quizQna,   },
+    quizState: { currentQuestionIndex, quizQna },
     quizDispatch
   } = useQuiz()
 
@@ -46,14 +46,19 @@ export const PlayQuiz = () => {
   return (
     <div className='question-options'>
       <div className='question'>{quizQna[currentQuestionIndex].question}</div>
-
-      {quizQna[currentQuestionIndex].options.map((option, index) => {
-        return (
-          <div key={index} onClick={() => optionBtnHandler(index)}>
-            <p>{option.value}</p>
-          </div>
-        )
-      })}
+      <div className=''>
+        {quizQna[currentQuestionIndex].options.map((option, index) => {
+          return (
+            <div
+              key={index}
+              onClick={() => optionBtnHandler(index)}
+              className='options' 
+            >
+              <div className={`option ${selectedOptionIndex === index ? "option-selected" : ""} `}  >{option.value}</div>
+            </div>
+          )
+        })}
+      </div>
 
       <>
         {quizQna.length - 1 === currentQuestionIndex ? (

@@ -9,16 +9,16 @@ export const Home = () => {
   const { quizState, quizDispatch } = useQuiz()
   const clickHandler = categoryId => {
     navigate('/rules')
-    // setCategory(quizDispatch, categoryId)
+    setCategory(quizDispatch, categoryId)
   }
   return (
-    <div classNameName='home'>
+    <div className='home'>
       {categories.map(category => {
         return (
           <section
             key={category._id}
             onClick={() => clickHandler(category._id)}
-            classNameName='more-quiz'
+            className='more-quiz'
           >
             <h2 className='subheading'>{category.categoryName}</h2>
             <img

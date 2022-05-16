@@ -4,7 +4,8 @@ export const categories = [
     categoryName: 'quiz 101 ',
     img: {
       altText: 'img 101',
-      src: './assests/ipl.png'
+      src:
+        'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/07/what-is-javascript.jpg'
     },
     description: 'Play this quiz 101',
     totalQuestions: 5
@@ -13,9 +14,9 @@ export const categories = [
     _id: '102',
     categoryName: 'quiz 102 ',
     img: {
-      altText: 'img 102',
+      altText: 'marvel quiz ',
       src:
-        'https://upload.wikimedia.org/wikipedia/en/3/33/Silicon_valley_title.png'
+        'https://wallpapers.com/images/featured/avengers%20endgame-mghdp4gaqzu4q4us.jpg'
     },
     description: 'Play this quiz 102 ',
     totalQuestions: 5
