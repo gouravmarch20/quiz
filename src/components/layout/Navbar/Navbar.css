@@ -28,7 +28,6 @@ nav a:hover {
     max-width: 30vw;
     margin-left: 15vw;
     display: flex;
-    /* justify-content: space-between; */
   }
   .nav__btn {
     padding: 0.5rem 0.7rem;

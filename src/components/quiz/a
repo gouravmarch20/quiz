@@ -1,0 +1,114 @@
+{
+    "categoryName": "Hollywood",
+    "description": "MCU fans assemble! this trivia quiz is just for you.",
+    "title": "Marvel Cinematic Universe",
+    "questions": [
+        {
+            "question": "Where is Captain America from?",
+            "options": [
+                {
+                    "isRight": false,
+                    "value": "New York"
+                },
+                {
+                    "value": "Mumbai",
+                    "isRight": false
+                },
+                {
+                    "isRight": true,
+                    "value": "Brooklyn"
+                },
+                {
+                    "value": "Canada",
+                    "isRight": false
+                }
+            ]
+        },
+        {
+            "question": "Who is Tony Stark’s father?",
+            "options": [
+                {
+                    "isRight": true,
+                    "value": "Howard Stark"
+                },
+                {
+                    "value": "Pony Stark",
+                    "isRight": false
+                },
+                {
+                    "isRight": false,
+                    "value": "Stephen Stark"
+                },
+                {
+                    "isRight": false,
+                    "value": "Vicky Stark"
+                }
+            ]
+        },
+        {
+            "question": "Captain America’s shield and Bucky’s arm are made of what?",
+            "options": [
+                {
+                    "value": "Belgium",
+                    "isRight": false
+                },
+                {
+                    "isRight": true,
+                    "value": "Vibranium"
+                },
+                {
+                    "value": "Plastic",
+                    "isRight": false
+                },
+                {
+                    "value": "Titanium",
+                    "isRight": false
+                }
+            ]
+        },
+        {
+            "options": [
+                {
+                    "isRight": false,
+                    "value": "Wanda"
+                },
+                {
+                    "value": "Zemo",
+                    "isRight": true
+                },
+                {
+                    "value": "Loki",
+                    "isRight": false
+                },
+                {
+                    "value": "Peter",
+                    "isRight": false
+                }
+            ],
+            "question": "Who was responsible for King T’Chaka’s death?"
+        },
+        {
+            "question": "Who rescued Tony Stark and Nebula from space?",
+            "options": [
+                {
+                    "isRight": false,
+                    "value": "Thor"
+                },
+                {
+                    "isRight": false,
+                    "value": "Bajrang Bali"
+                },
+                {
+                    "isRight": false,
+                    "value": "Elon Musk"
+                },
+                {
+                    "isRight": true,
+                    "value": "Captain Marvel"
+                }
+            ]
+        }
+    ],
+    "bannerImage": "https://wallpapers.com/images/featured/avengers%20endgame-mghdp4gaqzu4q4us.jpg",
+    "id": "vOaI5ZSKzJ9oWfkKSyRY"
+}

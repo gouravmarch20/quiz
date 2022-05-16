@@ -1,8 +1,17 @@
-
 .heading {
   margin-top: 2rem;
   font-size: 2rem;
   color: greenyellow;
   margin-bottom: 0rem;
   text-align: center;
+}
+.btn-disable {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.btn-danger {
+  background-color: red;
+}
+.bg-green {
+  background-color: green;
 }

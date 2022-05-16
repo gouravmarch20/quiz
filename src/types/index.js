@@ -1,0 +1,6 @@
+// quiz
+export const GET_QNA = 'GET_QNA'
+export const SET_CATEGORY = 'SET_CATEGORY'
+export const UPDATE_SCORE = 'UPDATE_SCORE'
+export const UPDATE_QUESTION = 'UPDATE_QUESTION'
+export const SET_SELECTED_OPTION = 'SET_SELECTED_OPTION'
