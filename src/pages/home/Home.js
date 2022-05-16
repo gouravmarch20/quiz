@@ -1,4 +1,5 @@
 import React from 'react'
+import './Home.css'
 import { useNavigate } from 'react-router-dom'
 import { categories } from '../../faker/categories'
 import { getQna, setCategory } from '../../actions/'
@@ -11,27 +12,24 @@ export const Home = () => {
     // setCategory(quizDispatch, categoryId)
   }
   return (
-    <div className='home'>
-      {/* {categories && categories.length > 0 ? (
-        <div>
-          <div className='card'>
-            <h2>h</h2> */}
+    <div classNameName='home'>
       {categories.map(category => {
         return (
-          <div key={category._id} onClick={() => clickHandler(category._id)}>
-            <p>{category.categoryName}</p>
-            <p>{category.description}</p>
-            <img src={category.img.src} alt={category.img.altText} />
-          </div>
+          <section
+            key={category._id}
+            onClick={() => clickHandler(category._id)}
+            classNameName='more-quiz'
+          >
+            <h2 className='subheading'>{category.categoryName}</h2>
+            <img
+              className='image--responsive'
+              src={category.img.src}
+              alt={category.img.altText}
+            />
+            <p className='content'>{category.description}</p>
+          </section>
         )
       })}
-      {/* </div>
-        </div>
-      ) : (
-        <div>
-          <h2>No quiz available</h2>
-        </div>
-      )} */}
     </div>
   )
 }
