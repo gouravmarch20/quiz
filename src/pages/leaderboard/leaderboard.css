@@ -1,0 +1,40 @@
+.list {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 auto;
+  width: 50%;
+  text-center: center;
+}
+.list-title {
+  color: #242b2e;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.list-item {
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  border-radius: 1rem;
+  border: 1px dashed blue;
+  margin: 1rem;
+}
+.list-item:hover {
+  padding: 0.7rem 1.1rem;
+  transition: all 0.8 ease-in-out;
+  border: 1px dashed blueviolet;
+
+  font-weight: 700;
+  box-shadow: 2px 4px 8px blueviolet;
+}
+/* notification */
+.notification {
+  width: 50%;
+  margin: 0 auto;
+}
+.notification-time {
+  color: red;
+}
+.notification-time:hover {
+  padding: 1rem;
+  font-weight: 700;
+}

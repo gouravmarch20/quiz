@@ -6,11 +6,12 @@ import { useQuiz } from '../../context/quizContext'
 import { ResultCard } from '../../components'
 export const ResultPage = () => {
   const {
-    quizState: { selectedOption, quizQna },
-    quizDispatch
+    quizState: { selectedOption, quizQna }
   } = useQuiz()
+
   const navigate = useNavigate()
-  const isCorrectOption = quizQna.map(qna =>
+  // TODO : OPTIMAZIOTION ? NOT NEED --> .LENGTH CASE INCULUDE . TELL PICK QUIZ
+  const isCorrectOption = quizQna?.map(qna =>
     qna.options.reduce((acc, curr, id) => {
       if (curr.correct) {
         acc = id
@@ -20,13 +21,17 @@ export const ResultPage = () => {
   )
   const scoreCount = selectedOption.reduce(
     (acc, curr, index) =>
-      curr === isCorrectOption[index] ? acc + 10 : acc - 5,
+      // FIXME: BETTER MONEY PRAMID
+      // curr === isCorrectOption[index] ? acc + 10 : acc - 5,
+      curr === isCorrectOption[index] ? acc + 10 : acc,
     0
   )
   return (
     <>
-      <div className='align-center'>
-        <h2 className='subheading'>Your score is {scoreCount}</h2>
+      <div className='result-page-align-center'>
+        <h2 className='heading'>
+          Your score is <span className='color-fancy'>{scoreCount}</span>
+        </h2>
 
         {quizQna.map((question, index) => {
           return (
@@ -40,7 +45,12 @@ export const ResultPage = () => {
           )
         })}
 
-        <button className='btn'>Go to home</button>
+        <button
+          className='btn btn-info result-page-btn'
+          onClick={() => navigate('/')}
+        >
+          Go to home
+        </button>
       </div>
     </>
   )

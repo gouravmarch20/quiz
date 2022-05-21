@@ -1,17 +1,5 @@
-.heading {
-  margin-top: 2rem;
-  font-size: 2rem;
-  color: greenyellow;
-  margin-bottom: 0rem;
-  text-align: center;
+body {
+  background-color: #cad5e2;
+  margin: 0;
 }
-.btn-disable {
-  opacity: 0.6;
-  pointer-events: none;
-}
-.btn-danger {
-  background-color: red;
-}
-.bg-green {
-  background-color: green;
-}
+@import url("./style/index.css");

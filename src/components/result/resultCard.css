@@ -1,0 +1,16 @@
+.result-card {
+  border: 1px dashed blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 20vh;
+}
+.result-card:hover {
+  border: 1px solid blue;
+
+  box-shadow: 2px 4px 8px blueviolet;
+
+  transition: all 0.4s;
+}

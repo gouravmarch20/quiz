@@ -1,0 +1,14 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-none {
+  pointer-events: none;
+}
+
+.btn-disable {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.text-left {
+  text-align: left !important;
+}

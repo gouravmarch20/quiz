@@ -4,18 +4,32 @@ import './rulesPage.css'
 export const Rules = () => {
   const navigate = useNavigate()
   return (
-    <section className='rules-page'>
-      {/* <div className='rules-wrapper'> */}
-      <h2 className='subheading'>rules plage</h2>
+    <section className='rules-page-align-center'>
+      <div className='rules-wrapper'>
+        <h2 className='subheading text-lg'>rules plage</h2>
+        <ul className='list-display-circle'>
+          <li className='rules-content list-display-circle '>
+            The quiz contain total 5 question
+          </li>
+          <li className='rules-content list-display-circle'>
+            10 marks for every corect answer
+            {/* and 5 negative mark for ever worng */}
+            {/* answer{' '} */}
+          </li>
+          <li className='rules-content list-display-circle'>
+            No skip option available{' '}
+          </li>
+        </ul>
 
-      <p className='content'>The quiz contain total 5 question</p>
-      <p className='content'>
-        10 marks for every corect answer and 5 negative mark for ever worng
-        answer{' '}
-      </p>
-      <p className='content'>no skip option available </p>
-      <button onClick={() => navigate('/quiz')}>play today</button>
-      {/* </div> */}
+        <div className='mb-10'>
+          <button
+            className='btn btn-success btn-full'
+            onClick={() => navigate('/quiz')}
+          >
+            Play Now
+          </button>
+        </div>
+      </div>
     </section>
   )
 }

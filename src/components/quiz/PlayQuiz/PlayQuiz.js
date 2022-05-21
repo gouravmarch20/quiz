@@ -13,6 +13,8 @@ export const PlayQuiz = () => {
     quizState: { currentQuestionIndex, quizQna },
     quizDispatch
   } = useQuiz()
+  console.log(quizQna)
+  // const currentQuestionIndex = 1
 
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(-1)
 
@@ -23,11 +25,13 @@ export const PlayQuiz = () => {
     setSelectedOptionIndex(-1)
   }, [currentQuestionIndex])
   useEffect(() => {
-    //TODO:
     if (location.pathname === '/quiz') {
-      // dispatch({ type: RESET_QUIZ })
+      if (quizQna.length === 0) {
+        console.log('object')
+        navigate('/')
+      }
     }
-  }, [])
+  }, [quizQna])
 
   const nextButtonHandler = () => {
     updateQuestionIndex(quizDispatch, currentQuestionIndex)
@@ -45,16 +49,22 @@ export const PlayQuiz = () => {
   }
   return (
     <div className='question-options'>
-      <div className='question'>{quizQna[currentQuestionIndex].question}</div>
+      <div className='question'>{quizQna[currentQuestionIndex]?.question}</div>
       <div className=''>
-        {quizQna[currentQuestionIndex].options.map((option, index) => {
+        {quizQna[currentQuestionIndex]?.options.map((option, index) => {
           return (
             <div
               key={index}
               onClick={() => optionBtnHandler(index)}
-              className='options' 
+              className='options'
             >
-              <div className={`option ${selectedOptionIndex === index ? "option-selected" : ""} `}  >{option.value}</div>
+              <div
+                className={`option ${
+                  selectedOptionIndex === index ? 'option-selected' : ''
+                } `}
+              >
+                {option.value}
+              </div>
             </div>
           )
         })}
@@ -62,12 +72,17 @@ export const PlayQuiz = () => {
 
       <>
         {quizQna.length - 1 === currentQuestionIndex ? (
-          <button
-            className={`btn ${selectedOptionIndex === -1 ? 'btn-disable' : ''}`}
-            onClick={submitBtnHandler}
-          >
-            Get Score{' '}
-          </button>
+          <>
+            <button
+              className={`btn ${
+                selectedOptionIndex === -1 ? 'btn-disable' : ''
+              }`}
+              onClick={submitBtnHandler}
+            >
+              Get Score{' '}
+            </button>
+            <h2 className=' subheading text-green '>It your last question</h2>
+          </>
         ) : (
           <>
             <button
@@ -78,6 +93,13 @@ export const PlayQuiz = () => {
             >
               Next question{' '}
             </button>
+            <h2 className='subheading'>
+              Current question number{' '}
+              <span className='text-green text-lg'>
+                {' '}
+                {currentQuestionIndex + 1}
+              </span>
+            </h2>
           </>
         )}
       </>

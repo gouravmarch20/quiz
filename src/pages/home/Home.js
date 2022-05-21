@@ -21,12 +21,14 @@ export const Home = () => {
             className='more-quiz'
           >
             <h2 className='subheading'>{category.categoryName}</h2>
-            <img
-              className='image--responsive'
-              src={category.img.src}
-              alt={category.img.altText}
-            />
-            <p className='content'>{category.description}</p>
+            <div className='cursor-pointer'>
+              <img
+                src={category.img.src}
+                alt={category.img.altText}
+                className='image--responsive'
+              />
+            </div>
+            <p className='quiz-description'>{category.description}</p>
           </section>
         )
       })}

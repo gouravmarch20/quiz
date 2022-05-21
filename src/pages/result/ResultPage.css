@@ -1,15 +1,15 @@
-.align-center {
+.result-page-align-center {
+  padding-top: 2rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.result-page-btn {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-.btn {
+  margin: 2rem auto;
   padding: 1rem;
-  margin: 0.5rem;
-}
-.margin-1{
-    margin: 1rem;
+
+  text-align: center;
 }

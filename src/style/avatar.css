@@ -1,0 +1,41 @@
+.avatar {
+  object-fit: contain;
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.avatar-text {
+  background-color: var(--color-info);
+  margin: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.avatar-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Coustom sizing */
+.avatar-xs {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+.avatar-sm {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+.avatar-md {
+  height: 6.4rem;
+  width: 6.4rem;
+}
+.avatar-lg {
+  height: 10rem;
+  width: 10rem;
+}

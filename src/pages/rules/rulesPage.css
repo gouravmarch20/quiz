@@ -1,19 +1,37 @@
-.rules-page {
+.rules-page-align-center {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 50vh;
-  height: 60vh;
-  background-color: white;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  margin-top: 7vh;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 1rem;
 }
 .rules-wrapper {
-  /* display: flex;
-    */
-  /* width: 80%;
-  margin: 0 auto; */
+  border: 1px dashed blue;
+}
+.rules-wrapper:hover {
+  transform: translateY(-1vmax);
+  box-shadow: 2px 4px 8px blueviolet;
+
+  transition: all 0.4s;
+}
+.rules-content {
+  /* text-align: center; */
+  width: 80%;
+  margin-left: 10% !important;
+  padding: 0.5rem;
+  color: var(--color-text-content);
+  font-size: 1.8rem;
+  font-family: serif;
+}
+.btn-full {
+  width: 80%;
+  margin-left: 10% !important;
+}
+.list-display-circle {
+  list-style-type: circle;
+  list-style-position: inside;
+  /* color: red; */
 }

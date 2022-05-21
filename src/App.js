@@ -1,6 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router-dom'
 import './App.css'
-import { Home, Rules, QuizPage, ResultPage } from './pages'
+import { Home, Rules, QuizPage, ResultPage, LeaderboardPage } from './pages'
 import { Navbar } from './components'
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
         <Route path='/rules' element={<Rules />} />
         <Route path='/quiz' element={<QuizPage />} />
         <Route path='/result' element={<ResultPage />} />
+        <Route path='/leaderboard' element={<LeaderboardPage />} />
       </Routes>
     </div>
   )

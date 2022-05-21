@@ -5,3 +5,4 @@ export { QuizPage } from "./quiz/QuizPage";
 
 export { Rules } from "./rules/Rules";
 export { ResultPage } from "./result/ResultPage";
+export { LeaderboardPage } from "./leaderboard/LeaderboardPage";

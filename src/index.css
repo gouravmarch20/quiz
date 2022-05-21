@@ -1,31 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
 * {
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+button {
+  cursor: pointer;
 }
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-:root {
-  --white: #fff;
-  --text-color: #989fce;
-}
-.container {
-  padding: 0 1rem;
 }

@@ -160,7 +160,7 @@ export const qnaData = [
         options: [
           {
             value: 'Tony Stark',
-            correct: true
+            correct: false
           },
           {
             value: 'Iron man',
@@ -271,7 +271,7 @@ export const qnaData = [
         options: [
           {
             value: 'Parle',
-            correct: true
+            correct: false
           },
           {
             value: 'Amber',
