@@ -1,10 +1,10 @@
 .navbar-wrapper {
   margin-top: 0rem;
-  background-color: black;
-  /* min-height: 10vh; */
+  background-color: #03203c;
   top: 0;
   position: sticky;
   width: 100vw;
+  z-index: 100;
 }
 .navbar-fluid {
   display: flex;
@@ -13,7 +13,6 @@
   margin: 0 auto;
 }
 .navbar-left {
-  /* background-color: red; */
   display: flex;
   height: 10vh;
   align-items: center;
@@ -41,10 +40,13 @@
   padding: 1rem;
 }
 .navbar-link:hover {
-  background-color: green;
+  background-color: #23c4ed;
+  border-radius: 1rem;
 }
 .nav-link-active {
-  background-color: green;
+  border-radius: 1rem;
+
+  background-color: #23c4ed;
 }
 .input-seach-btn {
   padding: 0.6rem;

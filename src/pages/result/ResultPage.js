@@ -2,7 +2,7 @@ import React from 'react'
 import './ResultPage.css'
 import { useNavigate } from 'react-router-dom'
 import './ResultPage.css'
-import { useQuiz } from '../../context/quizContext'
+import { useQuiz } from '../../context/QuizContext'
 import { ResultCard } from '../../components'
 export const ResultPage = () => {
   const {

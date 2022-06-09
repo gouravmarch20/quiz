@@ -14,13 +14,13 @@ export const Navbar = () => {
                 isActive ? 'nav-link-active navbar-link ' : 'navbar-link '
               }
             >
-              Quiz *
+              Quiz-by
             </NavLink>
           </div>
-          <div className='navbar-center'>
+          {/* <div className='navbar-center'>
             <input type='search' className='input-quiz-search' name='' id='' />
             <button className='input-seach-btn '>search</button>
-          </div>
+          </div> */}
           <div className='navbar-right'>
             <NavLink
               to='./leaderboard'

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './PlayQuiz.css'
-import { useQuiz } from '../../../context/quizContext'
+import { useQuiz } from '../../../context/QuizContext'
 import {
   updateScore,
   updateQuestionIndex,
@@ -13,8 +13,6 @@ export const PlayQuiz = () => {
     quizState: { currentQuestionIndex, quizQna },
     quizDispatch
   } = useQuiz()
-  console.log(quizQna)
-  // const currentQuestionIndex = 1
 
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(-1)
 
@@ -27,7 +25,6 @@ export const PlayQuiz = () => {
   useEffect(() => {
     if (location.pathname === '/quiz') {
       if (quizQna.length === 0) {
-        console.log('object')
         navigate('/')
       }
     }

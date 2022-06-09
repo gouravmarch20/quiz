@@ -3,7 +3,7 @@ import './Home.css'
 import { useNavigate } from 'react-router-dom'
 import { categories } from '../../faker/categories'
 import { getQna, setCategory } from '../../actions/'
-import { useQuiz } from '../../context/quizContext'
+import { useQuiz } from '../../context/QuizContext'
 export const Home = () => {
   const navigate = useNavigate()
   const { quizState, quizDispatch } = useQuiz()
